@@ -39,7 +39,7 @@ const AddNotesForm: React.FC<AddNotesFormProps> = ({
                 onChange={setNoteContent}
                 className="mb-4"
             />
-            <input type="file" onChange={handleImageUpload} className="mb-4" />
+            <input type='image' onChange={handleImageUpload} className="mb-4" />
             {noteImage && (
                 <Image
                     src={noteImage}

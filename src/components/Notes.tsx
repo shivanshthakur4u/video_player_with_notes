@@ -2,7 +2,6 @@
 
 import React, { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
-import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 import Image from 'next/image';
 import AddBNotesButton from './AddBNotesButton';
