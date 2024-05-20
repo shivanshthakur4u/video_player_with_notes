@@ -12,14 +12,14 @@ interface AddNotesFormProps {
     setShowForm: (show: boolean) => void;
 }
 
-const AddNotesForm: React.FC<AddNotesFormProps> = ({ 
-    noteContent, 
-    setNoteContent, 
-    noteImage, 
-    setNoteImage, 
-    handleSaveNote, 
-    editMode, 
-    setShowForm 
+const AddNotesForm: React.FC<AddNotesFormProps> = ({
+    noteContent,
+    setNoteContent,
+    noteImage,
+    setNoteImage,
+    handleSaveNote,
+    editMode,
+    setShowForm
 }) => {
     const handleImageUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
         const file = e.target.files?.[0];
@@ -39,7 +39,7 @@ const AddNotesForm: React.FC<AddNotesFormProps> = ({
                 onChange={setNoteContent}
                 className="mb-4"
             />
-            <input type='image' onChange={handleImageUpload} className="mb-4" />
+            <input type="file" accept="image/png, image/gif, image/jpeg" onChange={handleImageUpload} className="mb-4" />
             {noteImage && (
                 <Image
                     src={noteImage}
